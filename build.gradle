@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        maven {url 'http://mavem.aliyun.com/nexus/content/group/public/'}
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.3.0.RELEASE'
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.3.0.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+allprojects {
+    group 'io.github.codingzhengsz'
+    version '0.0.1-SNAPSHOT'
+    apply plugin: 'idea'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
+
+    repositories {
+        maven {url 'http://mavem.aliyun.com/nexus/content/group/public/'}
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+    }
+}
