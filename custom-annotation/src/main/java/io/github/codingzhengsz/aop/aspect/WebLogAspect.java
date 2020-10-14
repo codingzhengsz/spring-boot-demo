@@ -1,7 +1,7 @@
-package io.github.codingzhengsz.aspect;
+package io.github.codingzhengsz.aop.aspect;
 
 import com.google.gson.Gson;
-import io.github.codingzhengsz.annotation.WebLog;
+import io.github.codingzhengsz.aop.WebLog;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -17,9 +17,7 @@ public class WebLogAspect {
 
   private static final Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 
-  private static final String LINE_SEPARATOR = System.lineSeparator();
-
-  @Pointcut("@annotation(io.github.codingzhengsz.annotation.WebLog)")
+  @Pointcut("@annotation(io.github.codingzhengsz.aop.WebLog)")
   public void webLog() {}
 
   @Before("webLog()")

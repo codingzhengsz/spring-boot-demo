@@ -1,2 +1,5 @@
 api:
   ping: http://localhost:8081/ping/success
+
+server:
+  port: 8502

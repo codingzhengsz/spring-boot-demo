@@ -1,0 +1,7 @@
+server:
+  port: 8501
+
+e2e-tracing:
+  appKey: FUABUF-2343F-354BJ-345BH
+  host: http://localhost:8502/ping
+  method: POST
