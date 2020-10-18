@@ -1,4 +1,5 @@
 rootProject.name = 'spring-boot-demo'
 include 'custom-annotation'
 include 'rest-template'
+include 'webflux-server'
 

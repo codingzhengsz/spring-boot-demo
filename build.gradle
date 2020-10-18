@@ -8,16 +8,9 @@ buildscript {
     }
 }
 
-plugins {
-    id 'org.springframework.boot' version '2.3.0.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-    id 'java'
-}
-
 allprojects {
     group 'io.github.codingzhengsz'
     version '0.0.1-SNAPSHOT'
-    apply plugin: 'idea'
 }
 
 subprojects {
@@ -30,9 +23,5 @@ subprojects {
     repositories {
         maven {url 'http://mavem.aliyun.com/nexus/content/group/public/'}
         mavenCentral()
-    }
-
-    dependencies {
-        implementation 'org.springframework.boot:spring-boot-starter-web'
     }
 }

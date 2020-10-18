@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.codingzhengsz'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.3.0.RELEASE'
+    testCompile 'io.projectreactor:reactor-test:3.3.10.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:2.3.0.RELEASE'
+}
