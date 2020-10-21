@@ -1,2 +1,0 @@
-api:
-  ping: http://localhost:8081/ping/success
