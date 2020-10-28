@@ -4,4 +4,5 @@ include 'rest-template'
 include 'webflux-server'
 include 'generic-type'
 include 'custom-utils'
+include 'strategy-pattern'
 
